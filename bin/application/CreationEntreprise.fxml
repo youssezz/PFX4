@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreationEntrepriseControlleur">
+   <center>
+      <AnchorPane prefHeight="480.0" prefWidth="720.0">
+      	<children>
+      		<Pane layoutX="105.0" layoutY="14.0" prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      			<children>
+      				<ImageView fitHeight="404.0" fitWidth="220.0" layoutX="21.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@skyscraper.png" />
+      					</image>
+      				</ImageView>
+      				<Label layoutX="154.0" layoutY="35.0" prefHeight="66.0" prefWidth="446.0" text="Création d'une entreprise">
+      					<font>
+      						<Font name="Agency FB" size="55.0" />
+      					</font>
+      				</Label>
+      				<TextField fx:id="nomEntreprise" layoutX="162.0" layoutY="151.0" promptText="ex : Apple">
+      					<font>
+      						<Font name="System Italic" size="12.0" />
+      					</font>
+      				</TextField>
+      				<TextField fx:id="adresseEntreprise" layoutX="163.0" layoutY="209.0" promptText="ex : 43 avenue Foch">
+      					<font>
+      						<Font name="System Italic" size="12.0" />
+      					</font>
+      				</TextField>
+      				<TextField fx:id="CPEntreprise" layoutX="163.0" layoutY="262.0" promptText="ex : 75004">
+      					<font>
+      						<Font name="System Italic" size="12.0" />
+      					</font>
+      				</TextField>
+      				<TextField fx:id="villeEntreprise" layoutX="361.0" layoutY="151.0" promptText="ex : Paris">
+      					<font>
+      						<Font name="System Italic" size="12.0" />
+      					</font>
+      				</TextField>
+      				<ImageView fitHeight="225.0" fitWidth="130.0" layoutX="554.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@Building.png" />
+      					</image>
+      				</ImageView>
+      				<TextField fx:id="mailEntreprise" layoutX="362.0" layoutY="209.0" promptText="ex : example@mail.com">
+      					<font>
+      						<Font name="System Italic" size="12.0" />
+      					</font>
+      				</TextField>
+      				<TextField fx:id="telEntreprise" layoutX="362.0" layoutY="262.0" promptText="ex : 06 12 34 56 78">
+      					<font>
+      						<Font name="System Italic" size="12.0" />
+      					</font>
+      				</TextField>
+      				<ButtonBar layoutX="218.0" layoutY="399.0" prefHeight="40.0" prefWidth="200.0">
+      					<buttons>
+      						<Button fx:id="confirmer" mnemonicParsing="false" onAction="#confirmerAction" text="Valider" textFill="#00ff26">
+      							<font>
+      								<Font name="System Bold" size="13.0" />
+      							</font>
+      						</Button>
+      						<Button fx:id="annuler" mnemonicParsing="false" onAction="#annulerAction" text="Annuler" textFill="RED">
+      							<font>
+      								<Font name="System Bold" size="13.0" />
+      							</font>
+      						</Button>
+      					</buttons>
+      				</ButtonBar>
+                  <ChoiceBox fx:id="domaine" layoutX="371.0" layoutY="337.0" prefWidth="150.0" />
+                  <Text layoutX="139.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quel est votre domaine d'activité ?">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+      			</children>
+      		</Pane>
+      	</children>
+      </AnchorPane>
+   </center>
+</BorderPane>
